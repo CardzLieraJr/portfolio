@@ -33,13 +33,13 @@ export const NavBar = () => {
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
-          <a href="#home" style={{ textDecoration: "none" }}>
-            <Navbar>
+          <Navbar.Brand>
+            <a href="#home" style={{ textDecoration: "none" }}>
               <h1 style={{ color: "white", fontWeight: "bold" }}>
                 Ricardo Liera Jr
               </h1>
-            </Navbar>
-          </a>
+            </a>
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
@@ -53,7 +53,7 @@ export const NavBar = () => {
               <div className="social-icon">
                 <a href="https://www.linkedin.com/in/ricardo-jr-liera-8940832a3/" target="_blank"><img src={navIcon1} alt="linkedin" /></a>
               </div>
-              <a href={cvFile} download="RicardoLieraJrCV.pdf"><button>Download CV</button></a>
+                <a href={cvFile} download="RicardoLieraJrCV.pdf"><button>Download CV</button></a>
             </span>
           </Navbar.Collapse>
         </Container>
