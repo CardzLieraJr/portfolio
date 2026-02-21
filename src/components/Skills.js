@@ -10,7 +10,6 @@ import colorSharp from "../assets/img/color-sharp.png"
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5
     },
@@ -38,28 +37,28 @@ export const Skills = () => {
                        <br/>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Javascript</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>React Js</h5>
-                            </div>
-                            <div className="item">
                                 <img src={meter2} alt="Image" />
-                                <h5>Python</h5>
+                                <h5>MERN / PERN</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter1} alt="Image" />
+                                <h5>LARAVEL / PHP</h5>
                             </div>
                             <div className="item">
                                 <img src={meter3} alt="Image" />
-                                <h5>Node Js</h5>
+                                <h5>React Js | Angular Js</h5>
                             </div>
                             <div className="item">
                                 <img src={meter1} alt="Image" />
-                                <h5>CSS</h5>
+                                <h5>Node Js | Express JS</h5>
                             </div>
                             <div className="item">
                                 <img src={meter1} alt="Image" />
-                                <h5>Photoshop/Illustrator</h5>
+                                <h5>HTML | CSS | Boostrap | Tailwind</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter1} alt="Image" />
+                                <h5>Jira | GIT</h5>
                             </div>
                         </Carousel>
                     </div>

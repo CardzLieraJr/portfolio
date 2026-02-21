@@ -93,14 +93,17 @@ export const Projects = () => {
                           })}
                         </Row>
                       </Tab.Pane>
+
                       {/* website */}
-                      <Tab.Pane eventKey="second">
+
+                      {/* <Tab.Pane eventKey="second">
                         <Row>
                           {website.map((website, index) => {
                             return <ProjectCard key={index} {...website} />;
                           })}
                         </Row>{" "}
                       </Tab.Pane>
+                      
                       <Tab.Pane eventKey="third">
                         <p>
                           Lorem ipsum dolor sit amet consectetur adipisicing
@@ -109,7 +112,7 @@ export const Projects = () => {
                           eligendi dicta officiis asperiores delectus quasi
                           inventore debitis quo.
                         </p>
-                      </Tab.Pane>
+                      </Tab.Pane> */}
                     </Tab.Content>
                   </Tab.Container>
                 </div>

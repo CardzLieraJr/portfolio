@@ -10,17 +10,15 @@ export const Footer = () => {
     <footer className="footer">
       <Container>
         <Row className="align-items-center">
-          <MailchimpForm />
           <Col size={12} sm={6}>
-            <img src={logo} alt="Logo" />
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
-            <div className="social-icon">
-              <a href="#"><img src={navIcon1} alt="Icon" /></a>
-              <a href="#"><img src={navIcon2} alt="Icon" /></a>
-              <a href="#"><img src={navIcon3} alt="Icon" /></a>
+            <div className="mt-4">
+              <div className="social-icon">
+                <a href="https://www.linkedin.com/in/ricardo-jr-liera-8940832a3/" target="_blank"><img src={navIcon1} alt="Icon" /></a>
+              </div>
+              <p>Copyright 2026. All Rights Reserved</p>
             </div>
-            <p>Copyright 2022. All Rights Reserved</p>
           </Col>
         </Row>
       </Container>
