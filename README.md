@@ -43,14 +43,12 @@ Backend / Services
 
     Node.js
     Express.js
-    Nodemailer
 
 Other Tools
 
     FontAwesome Icons
     React Router
     GitHub Pages (Deployment)
-
 ---
 
 ## 💻 Installation & Setup
