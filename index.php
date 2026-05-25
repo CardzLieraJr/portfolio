@@ -11,7 +11,9 @@
     <?php include('./component/contact.php'); ?>
   </main>
   <?php include('./component/footer.php'); ?>
-  <script defer src="./assets/js/script.js"></script>
+
+  <script src="./assets/js/script.js"></script>
+
 </body>
 
 </html>
