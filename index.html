@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="CardzLiera" />
     <title>Ricardo Liera Jr - Full Stack developer</title>
-     <link rel="shortcut icon" href="assets/img/favicon.png" />
+    <link rel="shortcut icon" href="assets/img/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,7 +34,6 @@
   <body
     class="bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 antialiased"
   >
-    <!-- ═══ NAV ═══ -->
     <header
       class="fixed inset-x-0 top-0 z-50 transition-all duration-300"
       :class="sc?'bg-white/90 dark:bg-zinc-950/90 backdrop-blur-md shadow-sm shadow-black/5':''"
@@ -44,7 +43,7 @@
         aria-label="Main navigation"
       >
         <a
-          href="#hero"
+          href="#itsme"
           class="font-display font-bold text-xl tracking-tight relative z-10"
         >
           <span class="text-zinc-900 dark:text-white">Cardz</span
@@ -54,9 +53,9 @@
         <ul class="hidden md:flex items-center gap-8 text-sm" role="list">
           <li>
             <a
-              href="#services"
+              href="#skills"
               class="nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
-              :class="s==='services'?'on !text-zinc-900 dark:!text-white':''"
+              :class="s==='skills'?'on !text-zinc-900 dark:!text-white':''"
               >What I do</a
             >
           </li>
@@ -89,7 +88,6 @@
         </ul>
 
         <div class="flex items-center gap-3">
-          <!-- dark toggle -->
           <button
             @click="dark=!dark"
             class="w-9 h-9 flex items-center justify-center rounded-full border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-colors"
@@ -126,7 +124,7 @@
               />
             </svg>
           </button>
-          <!-- hire me -->
+
           <a
             href="#contact"
             class="hidden md:inline-flex items-center gap-2 shimmer bg-accent text-white text-sm font-medium px-5 py-2 rounded-full hover:bg-accent-light transition-colors"
@@ -147,7 +145,7 @@
               />
             </svg>
           </a>
-          <!-- hamburger -->
+
           <button
             @click="mm=!mm"
             class="md:hidden w-9 h-9 flex items-center justify-center rounded-full border border-zinc-200 dark:border-zinc-800"
@@ -206,10 +204,10 @@
         >
           <li>
             <a
-              href="#services"
+              href="#skills"
               @click="mm=false"
               class="block text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors"
-              >Services</a
+              >What I do</a
             >
           </li>
           <li>
@@ -228,7 +226,7 @@
               >About</a
             >
           </li>
-          <li>
+          <!-- <li>
             <a
               href="#reviews"
               @click="mm=false"
@@ -243,7 +241,7 @@
               class="block text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors"
               >Blog</a
             >
-          </li>
+          </li> -->
           <li>
             <a
               href="#contact"
@@ -264,9 +262,8 @@
       </div>
     </header>
     <main>
-      <!-- ═══ HERO ═══ -->
       <section
-        id="hero"
+        id="itsme"
         class="relative min-h-screen flex items-center pt-16 overflow-hidden"
       >
         <div
@@ -398,8 +395,7 @@
         </div>
       </section>
 
-      <!-- ═══ SERVICES ═══ -->
-      <section id="services" class="py-24 bg-zinc-50 dark:bg-zinc-900/40">
+      <section id="skills" class="py-24 bg-zinc-50 dark:bg-zinc-900/40">
         <div class="max-w-6xl mx-auto px-6">
           <div class="mb-14">
             <p
@@ -525,7 +521,6 @@
         </div>
       </section>
 
-      <!-- ═══ WORK ═══ -->
       <section id="work" class="py-24">
         <div class="max-w-6xl mx-auto px-6">
           <div
@@ -543,7 +538,7 @@
                 Featured Work
               </h2>
             </div>
-            <!-- <a href="projects.html" class="reveal d1 text-sm font-medium text-zinc-500 dark:text-zinc-400 hover:text-accent transition-colors self-start sm:self-auto nl">All projects →</a> -->
+            <a href="projects.html" class="reveal d1 text-sm font-medium text-zinc-500 dark:text-zinc-400 hover:text-accent transition-colors self-start sm:self-auto nl">All projects →</a>
           </div>
 
           <div class="grid md:grid-cols-2 gap-6">
@@ -588,12 +583,12 @@
                   monitoring and reporting efficiency.
                   <br /><br />
                   Contributed to backend API development, focusing on building
-                  and maintaining services for data processing, system
+                  and maintaining skills for data processing, system
                   integration, and performance optimization within a production
                   environment.
                   <br /><br />
-                  Tech highlights: Backend API development, RESTful services,
-                  data integration, system performance optimization.
+                  Tech highlights: Backend API development, RESTful skills, data
+                  integration, system performance optimization.
 
                   <br /><br /><i
                     >Note: Project details are limited due to
@@ -647,17 +642,13 @@
                   efficiently manage Filipino beneficiary registrations, data
                   processing, and administrative workflows across the
                   organization.
-                  <br /><br />
-                  Contributed to full-stack development, database architecture,
-                  deployment, and core system functionality, ensuring secure
-                  data handling and a responsive user experience within a
-                  production environment.
-                  <br /><br />
-                  Tech highlights: PHP Native, MySQL, CRUD operations,
-                  authentication system, responsive UI, Excel import, and camera
-                  integration.
+  
                 </p>
-                <!-- <a href="case-study.html" class="inline-flex items-center gap-1.5 text-sm font-medium text-zinc-900 dark:text-white nl">Read More →</a> -->
+                <a
+                  href="case-study.html"
+                  class="inline-flex items-center gap-1.5 text-sm font-medium text-zinc-900 dark:text-white nl"
+                  >Read More →</a
+                >
               </div>
             </article>
 
@@ -708,7 +699,7 @@
                   vehicle buy-and-sell transactions and coordinating PMS
                   (Preventive Maintenance Service) and repair appointment
                   scheduling. The system streamlines user interactions by
-                  providing an efficient workflow for booking services, managing
+                  providing an efficient workflow for booking skills, managing
                   vehicle listings, and handling maintenance requests in an
                   organized digital environment.
                   <br /><br />
@@ -728,7 +719,6 @@
         </div>
       </section>
 
-      <!-- ═══ ABOUT ═══ -->
       <section id="about" class="py-24 bg-zinc-50 dark:bg-zinc-900/40">
         <div class="max-w-6xl mx-auto px-6">
           <div class="grid md:grid-cols-2 gap-16 items-center">
@@ -905,6 +895,12 @@
                   <span
                     role="listitem"
                     class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent"
+                    >Firebase</span
+                  >
+
+                  <span
+                    role="listitem"
+                    class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent"
                     >Git</span
                   >
 
@@ -932,7 +928,6 @@
         </div>
       </section>
 
-      <!-- ═══ TESTIMONIALS ═══ -->
       <!-- <section id="reviews" class="py-24">
   <div class="max-w-6xl mx-auto px-6">
     <div class="mb-14">
@@ -1000,7 +995,6 @@
   </div>
 </section> -->
 
-      <!-- ═══ BLOG ═══ -->
       <!-- <section id="blog" class="py-24 bg-zinc-50 dark:bg-zinc-900/40">
   <div class="max-w-6xl mx-auto px-6">
     <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-14">
@@ -1068,7 +1062,6 @@
   </div>
 </section> -->
 
-      <!-- ═══ CONTACT ═══ -->
       <section id="contact" class="py-24">
         <div class="max-w-6xl mx-auto px-6">
           <div
@@ -1179,23 +1172,27 @@
 
               <div class="reveal d2">
                 <form action="https://formspree.io/f/meedlpzk" method="POST">
+                  <input
+                    type="hidden"
+                    name="_subject"
+                    value="New Portfolio Message"
+                  />
 
-                  <!-- Optional: email subject -->
-                  <input type="hidden" name="_subject" value="New Portfolio Message">
+                  <input
+                    type="hidden"
+                    name="_next"
+                    value="https://your-site.com/thank-you.html"
+                  />
 
-                  <!-- Optional: redirect after success (change URL) -->
-                  <input type="hidden" name="_next" value="https://your-site.com/thank-you.html">
-
-                  <!-- Anti-spam honeypot (DO NOT remove) -->
-                  <input type="text" name="_gotcha" style="display:none">
+                  <input type="text" name="_gotcha" style="display: none" />
 
                   <div class="flex flex-col gap-4">
-
-                    <!-- Name + Email -->
                     <div class="grid sm:grid-cols-2 gap-4">
-
                       <div>
-                        <label for="fname" class="block text-xs font-medium text-zinc-400 mb-1.5">
+                        <label
+                          for="fname"
+                          class="block text-xs font-medium text-zinc-400 mb-1.5"
+                        >
                           Name <span aria-hidden="true">*</span>
                         </label>
                         <input
@@ -1206,11 +1203,14 @@
                           required
                           autocomplete="name"
                           class="w-full bg-zinc-800 border border-zinc-700 text-white text-sm rounded-xl px-4 py-3 placeholder-zinc-600 focus:outline-none focus:border-accent transition-colors"
-                        >
+                        />
                       </div>
 
                       <div>
-                        <label for="femail" class="block text-xs font-medium text-zinc-400 mb-1.5">
+                        <label
+                          for="femail"
+                          class="block text-xs font-medium text-zinc-400 mb-1.5"
+                        >
                           Email <span aria-hidden="true">*</span>
                         </label>
                         <input
@@ -1221,14 +1221,15 @@
                           required
                           autocomplete="email"
                           class="w-full bg-zinc-800 border border-zinc-700 text-white text-sm rounded-xl px-4 py-3 placeholder-zinc-600 focus:outline-none focus:border-accent transition-colors"
-                        >
+                        />
                       </div>
-
                     </div>
 
-                    <!-- Subject -->
                     <div>
-                      <label for="fsubject" class="block text-xs font-medium text-zinc-400 mb-1.5">
+                      <label
+                        for="fsubject"
+                        class="block text-xs font-medium text-zinc-400 mb-1.5"
+                      >
                         Subject
                       </label>
                       <input
@@ -1237,12 +1238,14 @@
                         name="subject"
                         placeholder="Subject"
                         class="w-full bg-zinc-800 border border-zinc-700 text-white text-sm rounded-xl px-4 py-3 placeholder-zinc-600 focus:outline-none focus:border-accent transition-colors"
-                      >
+                      />
                     </div>
 
-                    <!-- Message -->
                     <div>
-                      <label for="fmessage" class="block text-xs font-medium text-zinc-400 mb-1.5">
+                      <label
+                        for="fmessage"
+                        class="block text-xs font-medium text-zinc-400 mb-1.5"
+                      >
                         Message <span aria-hidden="true">*</span>
                       </label>
                       <textarea
@@ -1255,14 +1258,12 @@
                       ></textarea>
                     </div>
 
-                    <!-- Submit Button -->
                     <button
                       type="submit"
                       class="shimmer w-full bg-accent text-white font-display font-bold text-sm py-3.5 rounded-xl hover:bg-accent-light transition-colors"
                     >
                       Send message →
                     </button>
-
                   </div>
                 </form>
               </div>
@@ -1303,7 +1304,7 @@
           dark: false,
           mm: false,
           sc: false,
-          s: "hero",
+          s: "itsme",
 
           init() {
             // dark mode
@@ -1360,8 +1361,8 @@
               "reviews",
               "about",
               "work",
-              "services",
-              "hero",
+              "skills",
+              "itsme",
             ];
             for (const id of ids) {
               const el = document.getElementById(id);
